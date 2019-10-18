@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Thêm mới danh mục</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<img src="images/logo1.png" alt="">
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<div class="left">
+					<div class="box-left">
+						<h3>Tin tức nổi bật</h3>
+
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/android.png" alt="" width="100%">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/java.jpg" alt="" width="100%">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/php.png" alt="" width="100%">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="right">
+					<div class="box-right">
+						<h3>Thêm danh mục</h3>
+
+						<form action="" method="post" onsubmit="return false;" id="themdm">
+							<div class="form-group">
+								<div class="form-control">
+									<label for="">Tên danh mục</label>
+									<input type="text" id="tendm" class="txtInput">
+									<span class="spanerr err_tendm">*Tên danh mục phải là IN HOA</span>
+								</div>
+
+								<div class="form-control">
+									<label for="">Meta link</label>
+									<input type="text" id="mtlink" class="txtInput">
+									<span class="spanerr err_mtlink">*Meta link không có khoảng trắng, không có ký tự có dấu.</span>
+								</div>
+								
+								<div class="form-control">
+									<label for="">Thứ tự hiển thị</label>
+									<input type="text" id="ttht" class="txtInput">
+									<span class="spanerr err_ttht">*Thứ tự hiển thị phải là số, nhiều nhất 3 ký tự và không lớn hơn 99</span>
+								</div>
+
+								<div class="form-control">
+									<label for="">Mô tả</label>
+									<textarea id="mota" rows="5"></textarea>
+								</div>
+								
+								<div class="form-control">
+									<label for="">Danh mục cha</label>
+
+									<select id="dmcha">
+										<option value="">--Chọn danh mục cha--</option>
+										<option value="TRANG CHỦ">TRANG CHỦ</option>
+										<option value="SẢN PHẨM">SẢN PHẨM</option>
+										<option value="TIN TỨC">TIN TỨC</option>
+										<option value="LIÊN HỆ">LIÊN HỆ</option>
+									</select>
+								</div>
+
+								<div class="form-control">
+									<label for="">Trạng thái</label>
+
+									<div class="status">
+										Ẩn <input name="tt" type="radio" id="tt">
+										Hiện <input name="tt" type="radio" id="tt">
+									</div>
+								</div>
+
+								<div class="form-control">
+									<button type="submit" id="add">Thêm</button>
+									<button type="submit" id="reset">Làm lại</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="cls"></div>
+			</div>
+		</main>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	</body>
+</html>
